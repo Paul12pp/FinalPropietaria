@@ -33,8 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,14 +55,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administracion.Designer.cs">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Candidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Candidato.Designer.cs">
+      <DependentUpon>Form_Candidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Competencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Competencia.Designer.cs">
+      <DependentUpon>Form_Competencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Empleado.Designer.cs">
+      <DependentUpon>Form_Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Idioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Idioma.Designer.cs">
+      <DependentUpon>Form_Idioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Puesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Puesto.Designer.cs">
+      <DependentUpon>Form_Puesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\CandidatoRepos.cs" />
+    <Compile Include="Interfaces\CompetenciaRepos.cs" />
+    <Compile Include="Interfaces\EmpleadoRepos.cs" />
+    <Compile Include="Interfaces\ICandidato.cs" />
+    <Compile Include="Interfaces\ICompetencia.cs" />
+    <Compile Include="Interfaces\IdiomaRepos.cs" />
+    <Compile Include="Interfaces\IEmpleado.cs" />
+    <Compile Include="Interfaces\IIdioma.cs" />
+    <Compile Include="Interfaces\IPuesto.cs" />
+    <Compile Include="Interfaces\PuestosRepos.cs" />
+    <Compile Include="Models\Candidatos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Capacitaciones.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Competencias.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Departamento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Empleado.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Experiencia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Idiomas.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Puestos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administracion.resx">
+      <DependentUpon>Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Candidato.resx">
+      <DependentUpon>Form_Candidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Competencia.resx">
+      <DependentUpon>Form_Competencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Empleado.resx">
+      <DependentUpon>Form_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Idioma.resx">
+      <DependentUpon>Form_Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Puesto.resx">
+      <DependentUpon>Form_Puesto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +177,18 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\FinalPropietaria.Models.Puestos.datasource" />
+    <None Include="Properties\DataSources\FinalPropietaria.Models.RRHH_PropietariaEntities.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +201,26 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Models\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\rec.jpg" />
+    <None Include="Resources\user_13230.png" />
+    <None Include="Resources\depositphotos_239866106-stock-illustration-solid-purple-gradient-user-icon.jpg" />
+    <None Include="Resources\rrhh-contratacion-personal-contratacion-concepto_70921-385.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
