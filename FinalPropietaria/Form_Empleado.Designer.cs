@@ -171,6 +171,7 @@
             this.tbCedula.Name = "tbCedula";
             this.tbCedula.Size = new System.Drawing.Size(216, 20);
             this.tbCedula.TabIndex = 31;
+            this.tbCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbers);
             // 
             // dtFecha
             // 
@@ -214,6 +215,7 @@
             this.tbSalario.Name = "tbSalario";
             this.tbSalario.Size = new System.Drawing.Size(216, 20);
             this.tbSalario.TabIndex = 36;
+            this.tbSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbers);
             // 
             // cbEstado
             // 
@@ -273,6 +275,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_Empleado";
             this.Text = "Mantenimiento de Empleados";
+            this.Load += new System.EventHandler(this.Form_Empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

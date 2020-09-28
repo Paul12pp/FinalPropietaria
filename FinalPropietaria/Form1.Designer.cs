@@ -70,14 +70,15 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label5.Location = new System.Drawing.Point(65, 274);
+            this.label5.Location = new System.Drawing.Point(60, 274);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 15);
+            this.label5.Size = new System.Drawing.Size(118, 17);
             this.label5.TabIndex = 6;
             this.label5.Text = "Soy un candidato";
             this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.MouseHover += new System.EventHandler(this.label5_MouseHover);
             // 
             // button1
             // 

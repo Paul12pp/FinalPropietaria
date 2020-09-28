@@ -31,52 +31,59 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Candidato));
             this.tpExp = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnFin = new System.Windows.Forms.Button();
             this.label47 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.dateTimePicker13 = new System.Windows.Forms.DateTimePicker();
+            this.dtH4 = new System.Windows.Forms.DateTimePicker();
             this.label43 = new System.Windows.Forms.Label();
-            this.dateTimePicker14 = new System.Windows.Forms.DateTimePicker();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.dtD4 = new System.Windows.Forms.DateTimePicker();
+            this.tbSalario4 = new System.Windows.Forms.TextBox();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.tbPuesto4 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.tbEmpr4 = new System.Windows.Forms.TextBox();
             this.label46 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.dateTimePicker11 = new System.Windows.Forms.DateTimePicker();
+            this.dtH3 = new System.Windows.Forms.DateTimePicker();
             this.label37 = new System.Windows.Forms.Label();
-            this.dateTimePicker12 = new System.Windows.Forms.DateTimePicker();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.dtD3 = new System.Windows.Forms.DateTimePicker();
+            this.tbSalario3 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tbPuesto3 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tbEmpr3 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
+            this.dtH2 = new System.Windows.Forms.DateTimePicker();
             this.label32 = new System.Windows.Forms.Label();
-            this.dateTimePicker10 = new System.Windows.Forms.DateTimePicker();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.dtD2 = new System.Windows.Forms.DateTimePicker();
+            this.tbSalario2 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbPuesto2 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbEmpr2 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.dtH1 = new System.Windows.Forms.DateTimePicker();
             this.label27 = new System.Windows.Forms.Label();
-            this.dateTimePicker8 = new System.Windows.Forms.DateTimePicker();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.dtD1 = new System.Windows.Forms.DateTimePicker();
+            this.tbSalario1 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbPuesto1 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbEmpr1 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.tpComp = new System.Windows.Forms.TabPage();
+            this.label48 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tbInstitucion3 = new System.Windows.Forms.TextBox();
+            this.tbInstitucion2 = new System.Windows.Forms.TextBox();
+            this.tbInstitucion1 = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -110,6 +117,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.clCompetencias = new System.Windows.Forms.CheckedListBox();
             this.tpDatos = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.tbRecomendado = new System.Windows.Forms.TextBox();
@@ -123,17 +131,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbPuesto = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.tbNombre = new System.Windows.Forms.Label();
+            this.lbNombre = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbCedula = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.tbInstitucion1 = new System.Windows.Forms.TextBox();
-            this.tbInstitucion2 = new System.Windows.Forms.TextBox();
-            this.tbInstitucion3 = new System.Windows.Forms.TextBox();
             this.tpExp.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tpComp.SuspendLayout();
@@ -159,49 +162,51 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button3);
+            this.groupBox5.Controls.Add(this.button5);
+            this.groupBox5.Controls.Add(this.button4);
+            this.groupBox5.Controls.Add(this.btnFin);
             this.groupBox5.Controls.Add(this.label47);
             this.groupBox5.Controls.Add(this.label42);
-            this.groupBox5.Controls.Add(this.dateTimePicker13);
+            this.groupBox5.Controls.Add(this.dtH4);
             this.groupBox5.Controls.Add(this.label43);
-            this.groupBox5.Controls.Add(this.dateTimePicker14);
-            this.groupBox5.Controls.Add(this.textBox18);
+            this.groupBox5.Controls.Add(this.dtD4);
+            this.groupBox5.Controls.Add(this.tbSalario4);
             this.groupBox5.Controls.Add(this.label44);
-            this.groupBox5.Controls.Add(this.textBox19);
+            this.groupBox5.Controls.Add(this.tbPuesto4);
             this.groupBox5.Controls.Add(this.label45);
-            this.groupBox5.Controls.Add(this.textBox20);
+            this.groupBox5.Controls.Add(this.tbEmpr4);
             this.groupBox5.Controls.Add(this.label46);
             this.groupBox5.Controls.Add(this.label41);
             this.groupBox5.Controls.Add(this.label36);
-            this.groupBox5.Controls.Add(this.dateTimePicker11);
+            this.groupBox5.Controls.Add(this.dtH3);
             this.groupBox5.Controls.Add(this.label37);
-            this.groupBox5.Controls.Add(this.dateTimePicker12);
-            this.groupBox5.Controls.Add(this.textBox15);
+            this.groupBox5.Controls.Add(this.dtD3);
+            this.groupBox5.Controls.Add(this.tbSalario3);
             this.groupBox5.Controls.Add(this.label38);
-            this.groupBox5.Controls.Add(this.textBox16);
+            this.groupBox5.Controls.Add(this.tbPuesto3);
             this.groupBox5.Controls.Add(this.label39);
-            this.groupBox5.Controls.Add(this.textBox17);
+            this.groupBox5.Controls.Add(this.tbEmpr3);
             this.groupBox5.Controls.Add(this.label40);
             this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Controls.Add(this.dateTimePicker9);
+            this.groupBox5.Controls.Add(this.dtH2);
             this.groupBox5.Controls.Add(this.label32);
-            this.groupBox5.Controls.Add(this.dateTimePicker10);
-            this.groupBox5.Controls.Add(this.textBox12);
+            this.groupBox5.Controls.Add(this.dtD2);
+            this.groupBox5.Controls.Add(this.tbSalario2);
             this.groupBox5.Controls.Add(this.label33);
-            this.groupBox5.Controls.Add(this.textBox13);
+            this.groupBox5.Controls.Add(this.tbPuesto2);
             this.groupBox5.Controls.Add(this.label34);
-            this.groupBox5.Controls.Add(this.textBox14);
+            this.groupBox5.Controls.Add(this.tbEmpr2);
             this.groupBox5.Controls.Add(this.label35);
             this.groupBox5.Controls.Add(this.label30);
             this.groupBox5.Controls.Add(this.label26);
-            this.groupBox5.Controls.Add(this.dateTimePicker7);
+            this.groupBox5.Controls.Add(this.dtH1);
             this.groupBox5.Controls.Add(this.label27);
-            this.groupBox5.Controls.Add(this.dateTimePicker8);
-            this.groupBox5.Controls.Add(this.textBox11);
+            this.groupBox5.Controls.Add(this.dtD1);
+            this.groupBox5.Controls.Add(this.tbSalario1);
             this.groupBox5.Controls.Add(this.label25);
-            this.groupBox5.Controls.Add(this.textBox10);
+            this.groupBox5.Controls.Add(this.tbPuesto1);
             this.groupBox5.Controls.Add(this.label24);
-            this.groupBox5.Controls.Add(this.textBox9);
+            this.groupBox5.Controls.Add(this.tbEmpr1);
             this.groupBox5.Controls.Add(this.label23);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.Orchid;
@@ -212,14 +217,36 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Experiencia Laboral";
             // 
-            // button3
+            // button5
             // 
-            this.button3.Location = new System.Drawing.Point(380, 406);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 57;
-            this.button3.Text = "Finalizar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button5.Location = new System.Drawing.Point(299, 423);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(156, 23);
+            this.button5.TabIndex = 59;
+            this.button5.Text = "Cancelar proceso";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(299, 394);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 58;
+            this.button4.Text = "Atrás";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnFin
+            // 
+            this.btnFin.Enabled = false;
+            this.btnFin.Location = new System.Drawing.Point(380, 395);
+            this.btnFin.Name = "btnFin";
+            this.btnFin.Size = new System.Drawing.Size(75, 23);
+            this.btnFin.TabIndex = 57;
+            this.btnFin.Text = "Finalizar";
+            this.btnFin.UseVisualStyleBackColor = true;
+            this.btnFin.Click += new System.EventHandler(this.btnFin_Click);
             // 
             // label47
             // 
@@ -238,14 +265,15 @@
             this.label42.TabIndex = 55;
             this.label42.Text = "Hasta";
             // 
-            // dateTimePicker13
+            // dtH4
             // 
-            this.dateTimePicker13.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker13.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker13.Location = new System.Drawing.Point(142, 405);
-            this.dateTimePicker13.Name = "dateTimePicker13";
-            this.dateTimePicker13.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker13.TabIndex = 54;
+            this.dtH4.CustomFormat = "dd/MM/yyyy";
+            this.dtH4.Enabled = false;
+            this.dtH4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtH4.Location = new System.Drawing.Point(142, 405);
+            this.dtH4.Name = "dtH4";
+            this.dtH4.Size = new System.Drawing.Size(107, 20);
+            this.dtH4.TabIndex = 54;
             // 
             // label43
             // 
@@ -256,21 +284,23 @@
             this.label43.TabIndex = 53;
             this.label43.Text = "Desde";
             // 
-            // dateTimePicker14
+            // dtD4
             // 
-            this.dateTimePicker14.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker14.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker14.Location = new System.Drawing.Point(9, 405);
-            this.dateTimePicker14.Name = "dateTimePicker14";
-            this.dateTimePicker14.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker14.TabIndex = 52;
+            this.dtD4.CustomFormat = "dd/MM/yyyy";
+            this.dtD4.Enabled = false;
+            this.dtD4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtD4.Location = new System.Drawing.Point(9, 405);
+            this.dtD4.Name = "dtD4";
+            this.dtD4.Size = new System.Drawing.Size(107, 20);
+            this.dtD4.TabIndex = 52;
             // 
-            // textBox18
+            // tbSalario4
             // 
-            this.textBox18.Location = new System.Drawing.Point(334, 356);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(121, 20);
-            this.textBox18.TabIndex = 51;
+            this.tbSalario4.Enabled = false;
+            this.tbSalario4.Location = new System.Drawing.Point(334, 356);
+            this.tbSalario4.Name = "tbSalario4";
+            this.tbSalario4.Size = new System.Drawing.Size(121, 20);
+            this.tbSalario4.TabIndex = 51;
             // 
             // label44
             // 
@@ -281,12 +311,13 @@
             this.label44.TabIndex = 50;
             this.label44.Text = "Salario";
             // 
-            // textBox19
+            // tbPuesto4
             // 
-            this.textBox19.Location = new System.Drawing.Point(166, 356);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(151, 20);
-            this.textBox19.TabIndex = 49;
+            this.tbPuesto4.Enabled = false;
+            this.tbPuesto4.Location = new System.Drawing.Point(166, 356);
+            this.tbPuesto4.Name = "tbPuesto4";
+            this.tbPuesto4.Size = new System.Drawing.Size(151, 20);
+            this.tbPuesto4.TabIndex = 49;
             // 
             // label45
             // 
@@ -297,12 +328,13 @@
             this.label45.TabIndex = 48;
             this.label45.Text = "Puesto ocupado";
             // 
-            // textBox20
+            // tbEmpr4
             // 
-            this.textBox20.Location = new System.Drawing.Point(9, 356);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(140, 20);
-            this.textBox20.TabIndex = 47;
+            this.tbEmpr4.Enabled = false;
+            this.tbEmpr4.Location = new System.Drawing.Point(9, 356);
+            this.tbEmpr4.Name = "tbEmpr4";
+            this.tbEmpr4.Size = new System.Drawing.Size(140, 20);
+            this.tbEmpr4.TabIndex = 47;
             // 
             // label46
             // 
@@ -330,14 +362,15 @@
             this.label36.TabIndex = 44;
             this.label36.Text = "Hasta";
             // 
-            // dateTimePicker11
+            // dtH3
             // 
-            this.dateTimePicker11.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker11.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker11.Location = new System.Drawing.Point(142, 299);
-            this.dateTimePicker11.Name = "dateTimePicker11";
-            this.dateTimePicker11.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker11.TabIndex = 43;
+            this.dtH3.CustomFormat = "dd/MM/yyyy";
+            this.dtH3.Enabled = false;
+            this.dtH3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtH3.Location = new System.Drawing.Point(142, 299);
+            this.dtH3.Name = "dtH3";
+            this.dtH3.Size = new System.Drawing.Size(107, 20);
+            this.dtH3.TabIndex = 43;
             // 
             // label37
             // 
@@ -348,21 +381,24 @@
             this.label37.TabIndex = 42;
             this.label37.Text = "Desde";
             // 
-            // dateTimePicker12
+            // dtD3
             // 
-            this.dateTimePicker12.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker12.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker12.Location = new System.Drawing.Point(9, 299);
-            this.dateTimePicker12.Name = "dateTimePicker12";
-            this.dateTimePicker12.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker12.TabIndex = 41;
+            this.dtD3.CustomFormat = "dd/MM/yyyy";
+            this.dtD3.Enabled = false;
+            this.dtD3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtD3.Location = new System.Drawing.Point(9, 299);
+            this.dtD3.Name = "dtD3";
+            this.dtD3.Size = new System.Drawing.Size(107, 20);
+            this.dtD3.TabIndex = 41;
             // 
-            // textBox15
+            // tbSalario3
             // 
-            this.textBox15.Location = new System.Drawing.Point(334, 250);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(121, 20);
-            this.textBox15.TabIndex = 40;
+            this.tbSalario3.Enabled = false;
+            this.tbSalario3.Location = new System.Drawing.Point(334, 250);
+            this.tbSalario3.Name = "tbSalario3";
+            this.tbSalario3.Size = new System.Drawing.Size(121, 20);
+            this.tbSalario3.TabIndex = 40;
+            this.tbSalario3.TextChanged += new System.EventHandler(this.changeThreeE);
             // 
             // label38
             // 
@@ -373,12 +409,14 @@
             this.label38.TabIndex = 39;
             this.label38.Text = "Salario";
             // 
-            // textBox16
+            // tbPuesto3
             // 
-            this.textBox16.Location = new System.Drawing.Point(166, 250);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(151, 20);
-            this.textBox16.TabIndex = 38;
+            this.tbPuesto3.Enabled = false;
+            this.tbPuesto3.Location = new System.Drawing.Point(166, 250);
+            this.tbPuesto3.Name = "tbPuesto3";
+            this.tbPuesto3.Size = new System.Drawing.Size(151, 20);
+            this.tbPuesto3.TabIndex = 38;
+            this.tbPuesto3.TextChanged += new System.EventHandler(this.changeThreeE);
             // 
             // label39
             // 
@@ -389,12 +427,14 @@
             this.label39.TabIndex = 37;
             this.label39.Text = "Puesto ocupado";
             // 
-            // textBox17
+            // tbEmpr3
             // 
-            this.textBox17.Location = new System.Drawing.Point(9, 250);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(140, 20);
-            this.textBox17.TabIndex = 36;
+            this.tbEmpr3.Enabled = false;
+            this.tbEmpr3.Location = new System.Drawing.Point(9, 250);
+            this.tbEmpr3.Name = "tbEmpr3";
+            this.tbEmpr3.Size = new System.Drawing.Size(140, 20);
+            this.tbEmpr3.TabIndex = 36;
+            this.tbEmpr3.TextChanged += new System.EventHandler(this.changeThreeE);
             // 
             // label40
             // 
@@ -414,14 +454,15 @@
             this.label31.TabIndex = 34;
             this.label31.Text = "Hasta";
             // 
-            // dateTimePicker9
+            // dtH2
             // 
-            this.dateTimePicker9.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker9.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker9.Location = new System.Drawing.Point(142, 196);
-            this.dateTimePicker9.Name = "dateTimePicker9";
-            this.dateTimePicker9.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker9.TabIndex = 33;
+            this.dtH2.CustomFormat = "dd/MM/yyyy";
+            this.dtH2.Enabled = false;
+            this.dtH2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtH2.Location = new System.Drawing.Point(142, 196);
+            this.dtH2.Name = "dtH2";
+            this.dtH2.Size = new System.Drawing.Size(107, 20);
+            this.dtH2.TabIndex = 33;
             // 
             // label32
             // 
@@ -432,21 +473,24 @@
             this.label32.TabIndex = 32;
             this.label32.Text = "Desde";
             // 
-            // dateTimePicker10
+            // dtD2
             // 
-            this.dateTimePicker10.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker10.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker10.Location = new System.Drawing.Point(9, 196);
-            this.dateTimePicker10.Name = "dateTimePicker10";
-            this.dateTimePicker10.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker10.TabIndex = 31;
+            this.dtD2.CustomFormat = "dd/MM/yyyy";
+            this.dtD2.Enabled = false;
+            this.dtD2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtD2.Location = new System.Drawing.Point(9, 196);
+            this.dtD2.Name = "dtD2";
+            this.dtD2.Size = new System.Drawing.Size(107, 20);
+            this.dtD2.TabIndex = 31;
             // 
-            // textBox12
+            // tbSalario2
             // 
-            this.textBox12.Location = new System.Drawing.Point(334, 147);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(121, 20);
-            this.textBox12.TabIndex = 30;
+            this.tbSalario2.Enabled = false;
+            this.tbSalario2.Location = new System.Drawing.Point(334, 147);
+            this.tbSalario2.Name = "tbSalario2";
+            this.tbSalario2.Size = new System.Drawing.Size(121, 20);
+            this.tbSalario2.TabIndex = 30;
+            this.tbSalario2.TextChanged += new System.EventHandler(this.changeTwoE);
             // 
             // label33
             // 
@@ -457,12 +501,14 @@
             this.label33.TabIndex = 29;
             this.label33.Text = "Salario";
             // 
-            // textBox13
+            // tbPuesto2
             // 
-            this.textBox13.Location = new System.Drawing.Point(166, 147);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(151, 20);
-            this.textBox13.TabIndex = 28;
+            this.tbPuesto2.Enabled = false;
+            this.tbPuesto2.Location = new System.Drawing.Point(166, 147);
+            this.tbPuesto2.Name = "tbPuesto2";
+            this.tbPuesto2.Size = new System.Drawing.Size(151, 20);
+            this.tbPuesto2.TabIndex = 28;
+            this.tbPuesto2.TextChanged += new System.EventHandler(this.changeTwoE);
             // 
             // label34
             // 
@@ -473,12 +519,14 @@
             this.label34.TabIndex = 27;
             this.label34.Text = "Puesto ocupado";
             // 
-            // textBox14
+            // tbEmpr2
             // 
-            this.textBox14.Location = new System.Drawing.Point(9, 147);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(140, 20);
-            this.textBox14.TabIndex = 26;
+            this.tbEmpr2.Enabled = false;
+            this.tbEmpr2.Location = new System.Drawing.Point(9, 147);
+            this.tbEmpr2.Name = "tbEmpr2";
+            this.tbEmpr2.Size = new System.Drawing.Size(140, 20);
+            this.tbEmpr2.TabIndex = 26;
+            this.tbEmpr2.TextChanged += new System.EventHandler(this.changeTwoE);
             // 
             // label35
             // 
@@ -506,14 +554,14 @@
             this.label26.TabIndex = 23;
             this.label26.Text = "Hasta";
             // 
-            // dateTimePicker7
+            // dtH1
             // 
-            this.dateTimePicker7.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker7.Location = new System.Drawing.Point(142, 95);
-            this.dateTimePicker7.Name = "dateTimePicker7";
-            this.dateTimePicker7.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker7.TabIndex = 22;
+            this.dtH1.CustomFormat = "dd/MM/yyyy";
+            this.dtH1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtH1.Location = new System.Drawing.Point(142, 95);
+            this.dtH1.Name = "dtH1";
+            this.dtH1.Size = new System.Drawing.Size(107, 20);
+            this.dtH1.TabIndex = 22;
             // 
             // label27
             // 
@@ -524,21 +572,22 @@
             this.label27.TabIndex = 21;
             this.label27.Text = "Desde";
             // 
-            // dateTimePicker8
+            // dtD1
             // 
-            this.dateTimePicker8.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker8.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker8.Location = new System.Drawing.Point(9, 95);
-            this.dateTimePicker8.Name = "dateTimePicker8";
-            this.dateTimePicker8.Size = new System.Drawing.Size(107, 20);
-            this.dateTimePicker8.TabIndex = 20;
+            this.dtD1.CustomFormat = "dd/MM/yyyy";
+            this.dtD1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtD1.Location = new System.Drawing.Point(9, 95);
+            this.dtD1.Name = "dtD1";
+            this.dtD1.Size = new System.Drawing.Size(107, 20);
+            this.dtD1.TabIndex = 20;
             // 
-            // textBox11
+            // tbSalario1
             // 
-            this.textBox11.Location = new System.Drawing.Point(334, 46);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(121, 20);
-            this.textBox11.TabIndex = 5;
+            this.tbSalario1.Location = new System.Drawing.Point(334, 46);
+            this.tbSalario1.Name = "tbSalario1";
+            this.tbSalario1.Size = new System.Drawing.Size(121, 20);
+            this.tbSalario1.TabIndex = 5;
+            this.tbSalario1.TextChanged += new System.EventHandler(this.changeOneE);
             // 
             // label25
             // 
@@ -549,12 +598,13 @@
             this.label25.TabIndex = 4;
             this.label25.Text = "Salario";
             // 
-            // textBox10
+            // tbPuesto1
             // 
-            this.textBox10.Location = new System.Drawing.Point(166, 46);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(151, 20);
-            this.textBox10.TabIndex = 3;
+            this.tbPuesto1.Location = new System.Drawing.Point(166, 46);
+            this.tbPuesto1.Name = "tbPuesto1";
+            this.tbPuesto1.Size = new System.Drawing.Size(151, 20);
+            this.tbPuesto1.TabIndex = 3;
+            this.tbPuesto1.TextChanged += new System.EventHandler(this.changeOneE);
             // 
             // label24
             // 
@@ -565,12 +615,13 @@
             this.label24.TabIndex = 2;
             this.label24.Text = "Puesto ocupado";
             // 
-            // textBox9
+            // tbEmpr1
             // 
-            this.textBox9.Location = new System.Drawing.Point(9, 46);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(140, 20);
-            this.textBox9.TabIndex = 1;
+            this.tbEmpr1.Location = new System.Drawing.Point(9, 46);
+            this.tbEmpr1.Name = "tbEmpr1";
+            this.tbEmpr1.Size = new System.Drawing.Size(140, 20);
+            this.tbEmpr1.TabIndex = 1;
+            this.tbEmpr1.TextChanged += new System.EventHandler(this.changeOneE);
             // 
             // label23
             // 
@@ -594,8 +645,20 @@
             this.tpComp.Text = "Competencias y Capacitaciones";
             this.tpComp.UseVisualStyleBackColor = true;
             // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Orchid;
+            this.label48.Location = new System.Drawing.Point(10, 0);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(264, 20);
+            this.label48.TabIndex = 32;
+            this.label48.Text = "Competencias y Capacitaciones";
+            // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.tbInstitucion3);
             this.groupBox4.Controls.Add(this.tbInstitucion2);
             this.groupBox4.Controls.Add(this.tbInstitucion1);
@@ -637,6 +700,43 @@
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Capacitaciones";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(307, 290);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Atrás";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // tbInstitucion3
+            // 
+            this.tbInstitucion3.Enabled = false;
+            this.tbInstitucion3.Location = new System.Drawing.Point(318, 251);
+            this.tbInstitucion3.Name = "tbInstitucion3";
+            this.tbInstitucion3.ShortcutsEnabled = false;
+            this.tbInstitucion3.Size = new System.Drawing.Size(145, 20);
+            this.tbInstitucion3.TabIndex = 34;
+            // 
+            // tbInstitucion2
+            // 
+            this.tbInstitucion2.Enabled = false;
+            this.tbInstitucion2.Location = new System.Drawing.Point(318, 147);
+            this.tbInstitucion2.Name = "tbInstitucion2";
+            this.tbInstitucion2.Size = new System.Drawing.Size(145, 20);
+            this.tbInstitucion2.TabIndex = 33;
+            this.tbInstitucion2.TextChanged += new System.EventHandler(this.changeSecond);
+            // 
+            // tbInstitucion1
+            // 
+            this.tbInstitucion1.Enabled = false;
+            this.tbInstitucion1.Location = new System.Drawing.Point(318, 42);
+            this.tbInstitucion1.Name = "tbInstitucion1";
+            this.tbInstitucion1.Size = new System.Drawing.Size(145, 20);
+            this.tbInstitucion1.TabIndex = 32;
+            this.tbInstitucion1.TextChanged += new System.EventHandler(this.changeFirst);
             // 
             // label29
             // 
@@ -681,6 +781,7 @@
             this.dtHasta3.Name = "dtHasta3";
             this.dtHasta3.Size = new System.Drawing.Size(107, 20);
             this.dtHasta3.TabIndex = 28;
+            this.dtHasta3.TabStop = false;
             // 
             // label19
             // 
@@ -699,6 +800,7 @@
             this.dtDesde3.Name = "dtDesde3";
             this.dtDesde3.Size = new System.Drawing.Size(107, 20);
             this.dtDesde3.TabIndex = 26;
+            this.dtDesde3.TabStop = false;
             // 
             // label20
             // 
@@ -711,6 +813,7 @@
             // 
             // cbNivel3
             // 
+            this.cbNivel3.Enabled = false;
             this.cbNivel3.FormattingEnabled = true;
             this.cbNivel3.Location = new System.Drawing.Point(185, 250);
             this.cbNivel3.Name = "cbNivel3";
@@ -737,6 +840,7 @@
             // 
             // tbDescripcion3
             // 
+            this.tbDescripcion3.Enabled = false;
             this.tbDescripcion3.Location = new System.Drawing.Point(9, 252);
             this.tbDescripcion3.Name = "tbDescripcion3";
             this.tbDescripcion3.Size = new System.Drawing.Size(160, 20);
@@ -754,11 +858,13 @@
             // dtHasta2
             // 
             this.dtHasta2.CustomFormat = "dd/MM/yyyy";
+            this.dtHasta2.Enabled = false;
             this.dtHasta2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtHasta2.Location = new System.Drawing.Point(139, 194);
             this.dtHasta2.Name = "dtHasta2";
             this.dtHasta2.Size = new System.Drawing.Size(107, 20);
             this.dtHasta2.TabIndex = 18;
+            this.dtHasta2.ValueChanged += new System.EventHandler(this.changeSecond);
             // 
             // label14
             // 
@@ -772,11 +878,13 @@
             // dtDesde2
             // 
             this.dtDesde2.CustomFormat = "dd/MM/yyyy";
+            this.dtDesde2.Enabled = false;
             this.dtDesde2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDesde2.Location = new System.Drawing.Point(6, 194);
             this.dtDesde2.Name = "dtDesde2";
             this.dtDesde2.Size = new System.Drawing.Size(107, 20);
             this.dtDesde2.TabIndex = 16;
+            this.dtDesde2.ValueChanged += new System.EventHandler(this.changeSecond);
             // 
             // label15
             // 
@@ -789,11 +897,13 @@
             // 
             // cbNivel2
             // 
+            this.cbNivel2.Enabled = false;
             this.cbNivel2.FormattingEnabled = true;
             this.cbNivel2.Location = new System.Drawing.Point(185, 145);
             this.cbNivel2.Name = "cbNivel2";
             this.cbNivel2.Size = new System.Drawing.Size(121, 21);
             this.cbNivel2.TabIndex = 13;
+            this.cbNivel2.SelectedValueChanged += new System.EventHandler(this.changeSecond);
             // 
             // label16
             // 
@@ -815,10 +925,12 @@
             // 
             // tbDescripcion2
             // 
+            this.tbDescripcion2.Enabled = false;
             this.tbDescripcion2.Location = new System.Drawing.Point(9, 147);
             this.tbDescripcion2.Name = "tbDescripcion2";
             this.tbDescripcion2.Size = new System.Drawing.Size(160, 20);
             this.tbDescripcion2.TabIndex = 10;
+            this.tbDescripcion2.TextChanged += new System.EventHandler(this.changeSecond);
             // 
             // label12
             // 
@@ -837,6 +949,7 @@
             this.dtHasta1.Name = "dtHasta1";
             this.dtHasta1.Size = new System.Drawing.Size(107, 20);
             this.dtHasta1.TabIndex = 8;
+            this.dtHasta1.ValueChanged += new System.EventHandler(this.changeFirst);
             // 
             // label11
             // 
@@ -856,6 +969,7 @@
             this.dtDesde1.Name = "dtDesde1";
             this.dtDesde1.Size = new System.Drawing.Size(107, 20);
             this.dtDesde1.TabIndex = 6;
+            this.dtDesde1.ValueChanged += new System.EventHandler(this.changeFirst);
             // 
             // label10
             // 
@@ -868,11 +982,20 @@
             // 
             // cbNivel1
             // 
+            this.cbNivel1.Enabled = false;
             this.cbNivel1.FormattingEnabled = true;
+            this.cbNivel1.Items.AddRange(new object[] {
+            "Grado",
+            "Post-grado",
+            "Maestría",
+            "Doctorado",
+            "Técnico",
+            "Gestión"});
             this.cbNivel1.Location = new System.Drawing.Point(185, 40);
             this.cbNivel1.Name = "cbNivel1";
             this.cbNivel1.Size = new System.Drawing.Size(121, 21);
             this.cbNivel1.TabIndex = 3;
+            this.cbNivel1.SelectedValueChanged += new System.EventHandler(this.changeFirst);
             // 
             // label9
             // 
@@ -894,10 +1017,12 @@
             // 
             // tbDescripcion1
             // 
+            this.tbDescripcion1.Enabled = false;
             this.tbDescripcion1.Location = new System.Drawing.Point(9, 42);
             this.tbDescripcion1.Name = "tbDescripcion1";
             this.tbDescripcion1.Size = new System.Drawing.Size(160, 20);
             this.tbDescripcion1.TabIndex = 0;
+            this.tbDescripcion1.TextChanged += new System.EventHandler(this.changeFirst);
             // 
             // groupBox3
             // 
@@ -918,15 +1043,16 @@
             this.clCompetencias.Name = "clCompetencias";
             this.clCompetencias.Size = new System.Drawing.Size(206, 79);
             this.clCompetencias.TabIndex = 6;
+            this.clCompetencias.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.clCompetencias_ItemCheck);
             // 
             // tpDatos
             // 
             this.tpDatos.Controls.Add(this.label3);
             this.tpDatos.Controls.Add(this.groupBox2);
             this.tpDatos.Controls.Add(this.groupBox1);
-            this.tpDatos.Controls.Add(this.tbNombre);
+            this.tpDatos.Controls.Add(this.lbNombre);
             this.tpDatos.Controls.Add(this.label2);
-            this.tpDatos.Controls.Add(this.textBox2);
+            this.tpDatos.Controls.Add(this.tbNombre);
             this.tpDatos.Controls.Add(this.tbCedula);
             this.tpDatos.Controls.Add(this.pictureBox1);
             this.tpDatos.Location = new System.Drawing.Point(4, 24);
@@ -936,6 +1062,17 @@
             this.tpDatos.TabIndex = 0;
             this.tpDatos.Text = "Datos Personales";
             this.tpDatos.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Orchid;
+            this.label3.Location = new System.Drawing.Point(7, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(156, 20);
+            this.label3.TabIndex = 9;
+            this.label3.Text = " Datos Personales";
             // 
             // groupBox2
             // 
@@ -1069,16 +1206,16 @@
             this.label5.Text = "Puesto al que aspira";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // tbNombre
+            // lbNombre
             // 
-            this.tbNombre.AutoSize = true;
-            this.tbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNombre.ForeColor = System.Drawing.Color.Orchid;
-            this.tbNombre.Location = new System.Drawing.Point(126, 97);
-            this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(105, 13);
-            this.tbNombre.TabIndex = 5;
-            this.tbNombre.Text = "Nombre completo";
+            this.lbNombre.AutoSize = true;
+            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.ForeColor = System.Drawing.Color.Orchid;
+            this.lbNombre.Location = new System.Drawing.Point(126, 97);
+            this.lbNombre.Name = "lbNombre";
+            this.lbNombre.Size = new System.Drawing.Size(105, 13);
+            this.lbNombre.TabIndex = 5;
+            this.lbNombre.Text = "Nombre completo";
             // 
             // label2
             // 
@@ -1091,13 +1228,13 @@
             this.label2.TabIndex = 4;
             this.label2.Text = " Cédula";
             // 
-            // textBox2
+            // tbNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.changedAll);
+            this.tbNombre.Location = new System.Drawing.Point(126, 118);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(211, 20);
+            this.tbNombre.TabIndex = 2;
+            this.tbNombre.TextChanged += new System.EventHandler(this.changedAll);
             // 
             // tbCedula
             // 
@@ -1130,49 +1267,6 @@
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(505, 491);
             this.tabControl.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Orchid;
-            this.label3.Location = new System.Drawing.Point(7, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 20);
-            this.label3.TabIndex = 9;
-            this.label3.Text = " Datos Personales";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Orchid;
-            this.label48.Location = new System.Drawing.Point(10, 0);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(264, 20);
-            this.label48.TabIndex = 32;
-            this.label48.Text = "Competencias y Capacitaciones";
-            // 
-            // tbInstitucion1
-            // 
-            this.tbInstitucion1.Location = new System.Drawing.Point(318, 42);
-            this.tbInstitucion1.Name = "tbInstitucion1";
-            this.tbInstitucion1.Size = new System.Drawing.Size(145, 20);
-            this.tbInstitucion1.TabIndex = 32;
-            // 
-            // tbInstitucion2
-            // 
-            this.tbInstitucion2.Location = new System.Drawing.Point(318, 147);
-            this.tbInstitucion2.Name = "tbInstitucion2";
-            this.tbInstitucion2.Size = new System.Drawing.Size(145, 20);
-            this.tbInstitucion2.TabIndex = 33;
-            // 
-            // tbInstitucion3
-            // 
-            this.tbInstitucion3.Location = new System.Drawing.Point(318, 251);
-            this.tbInstitucion3.Name = "tbInstitucion3";
-            this.tbInstitucion3.Size = new System.Drawing.Size(145, 20);
-            this.tbInstitucion3.TabIndex = 34;
             // 
             // Form_Candidato
             // 
@@ -1232,9 +1326,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbPuesto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label tbNombre;
+        private System.Windows.Forms.Label lbNombre;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox tbCedula;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabControl tabControl;
@@ -1260,49 +1354,49 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dtHasta1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnFin;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.DateTimePicker dateTimePicker13;
+        private System.Windows.Forms.DateTimePicker dtH4;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.DateTimePicker dateTimePicker14;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.DateTimePicker dtD4;
+        private System.Windows.Forms.TextBox tbSalario4;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox tbPuesto4;
         private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox tbEmpr4;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.DateTimePicker dateTimePicker11;
+        private System.Windows.Forms.DateTimePicker dtH3;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.DateTimePicker dateTimePicker12;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.DateTimePicker dtD3;
+        private System.Windows.Forms.TextBox tbSalario3;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tbPuesto3;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tbEmpr3;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker9;
+        private System.Windows.Forms.DateTimePicker dtH2;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.DateTimePicker dateTimePicker10;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.DateTimePicker dtD2;
+        private System.Windows.Forms.TextBox tbSalario2;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tbPuesto2;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tbEmpr2;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.DateTimePicker dateTimePicker7;
+        private System.Windows.Forms.DateTimePicker dtH1;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.DateTimePicker dtD1;
+        private System.Windows.Forms.TextBox tbSalario1;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbPuesto1;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbEmpr1;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
@@ -1312,5 +1406,8 @@
         private System.Windows.Forms.TextBox tbInstitucion3;
         private System.Windows.Forms.TextBox tbInstitucion2;
         private System.Windows.Forms.TextBox tbInstitucion1;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button5;
     }
 }

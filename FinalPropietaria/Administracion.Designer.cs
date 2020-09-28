@@ -76,28 +76,28 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(150, 22);
             this.toolStripMenuItem1.Text = "Puestos";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(150, 22);
             this.toolStripMenuItem2.Text = "Idiomas";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(150, 22);
             this.toolStripMenuItem3.Text = "Empleados";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // competenciasToolStripMenuItem
             // 
             this.competenciasToolStripMenuItem.Name = "competenciasToolStripMenuItem";
-            this.competenciasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.competenciasToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.competenciasToolStripMenuItem.Text = "Competencias";
             this.competenciasToolStripMenuItem.Click += new System.EventHandler(this.competenciasToolStripMenuItem_Click);
             // 
@@ -112,12 +112,14 @@
             this.viewMenu.Name = "viewMenu";
             this.viewMenu.Size = new System.Drawing.Size(71, 20);
             this.viewMenu.Text = "Consultas";
+            this.viewMenu.Click += new System.EventHandler(this.viewMenu_Click);
             // 
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 

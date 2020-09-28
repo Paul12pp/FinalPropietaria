@@ -61,5 +61,13 @@ namespace FinalPropietaria.Interfaces
             return _dbContext.Empleado
                 .ToList();
         }
+
+        public IEnumerable<Empleado> Search(DateTime desde, DateTime hasta)
+        {
+            var data = _dbContext.Empleado
+                .Where(r => r.Fecha_Ing >= desde && r.Fecha_Ing <= hasta)
+                .ToList();
+            return data;
+        }
     }
 }

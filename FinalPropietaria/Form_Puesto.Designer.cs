@@ -124,6 +124,7 @@
             this.tbSmin.Name = "tbSmin";
             this.tbSmin.Size = new System.Drawing.Size(216, 20);
             this.tbSmin.TabIndex = 9;
+            this.tbSmin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbers);
             // 
             // label5
             // 
@@ -142,6 +143,7 @@
             this.tbSmax.Name = "tbSmax";
             this.tbSmax.Size = new System.Drawing.Size(216, 20);
             this.tbSmax.TabIndex = 11;
+            this.tbSmax.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbers);
             // 
             // label6
             // 

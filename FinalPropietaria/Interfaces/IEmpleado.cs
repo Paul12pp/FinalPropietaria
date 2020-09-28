@@ -13,5 +13,6 @@ namespace FinalPropietaria.Interfaces
         int AddEmpleado(Empleado model);
         int EditEmpleado(int idEmpleado, Empleado model);
         Empleado GetEmpleadoById(int idEmpleado);
+        IEnumerable<Empleado> Search(DateTime desde, DateTime hasta);
     }
 }

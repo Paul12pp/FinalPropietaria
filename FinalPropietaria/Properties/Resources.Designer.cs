@@ -63,9 +63,29 @@ namespace FinalPropietaria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap continuo {
+            get {
+                object obj = ResourceManager.GetObject("continuo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap depositphotos_239866106_stock_illustration_solid_purple_gradient_user_icon {
             get {
                 object obj = ResourceManager.GetObject("depositphotos_239866106-stock-illustration-solid-purple-gradient-user-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imprimir {
+            get {
+                object obj = ResourceManager.GetObject("imprimir", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

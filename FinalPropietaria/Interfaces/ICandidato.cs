@@ -11,9 +11,14 @@ namespace FinalPropietaria.Interfaces
     {
         IEnumerable<Candidatos> GetCandidatos();
         Candidatos GetCandidatoById(int id);
-        int AddCandidato(Candidatos model);
+        Candidatos AddCandidato(Candidatos model);
+        int EditCandidato(int id, Candidatos model);
         int AddExperiencia(List<Experiencia> model);
         IEnumerable<Experiencia> GetExperienciasByCandidato(int id);
-        int AddCapacitaciones(List<Capacitaciones> model);
+        int AddCapacitaciones(int id, List<Capacitaciones> model,
+            string competencias);
+        int DeleteCandidato(int id);
+        IEnumerable<Candidatos> Search(string nombre, int puesto, string comp,
+            decimal salarioD, decimal salarioH);
     }
 }

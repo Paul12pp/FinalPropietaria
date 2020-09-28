@@ -14,25 +14,29 @@ namespace FinalPropietaria.Interfaces
         {
             _dbContext = dbContext;
         }
-        public int AddCandidato(Candidatos model)
+        public Candidatos AddCandidato(Candidatos model)
         {
             try
             {
-                _dbContext.Candidatos.Add(model);
+                var cand = _dbContext.Candidatos.Add(model);
                 _dbContext.SaveChanges();
-                return 200;
+                return cand;
             }
             catch (Exception)
             {
-                return 500;
+                return new Candidatos();
             }
         }
 
-        public int AddCapacitaciones(List<Capacitaciones> model)
+        public int AddCapacitaciones(int id, List<Capacitaciones> model, 
+            string competencias)
         {
             try
             {
                 _dbContext.Capacitaciones.AddRange(model);
+                var cand = _dbContext.Candidatos
+                    .SingleOrDefault(r => r.Id == id);
+                cand.Competencias = competencias;
                 _dbContext.SaveChanges();
                 return 200;
             }
@@ -47,6 +51,54 @@ namespace FinalPropietaria.Interfaces
             try
             {
                 _dbContext.Experiencia.AddRange(model);
+                _dbContext.SaveChanges();
+                return 200;
+            }
+            catch (Exception)
+            {
+                return 500;
+            }
+        }
+
+        public int DeleteCandidato(int id)
+        {
+            try
+            {
+                var cand = _dbContext.Candidatos
+                    .SingleOrDefault(r => r.Id == id);
+                if (cand != null)
+                {
+                    var cap = _dbContext.Capacitaciones
+                        .Where(r => r.IdCandidato == id);
+                    _dbContext.Capacitaciones.RemoveRange(cap);
+                    var exp = _dbContext.Experiencia.
+                        Where(r => r.IdCandidato == id);
+                    _dbContext.Experiencia.RemoveRange(exp);
+                    _dbContext.SaveChanges();
+                    return 200;
+                }
+                else
+                {
+                    return 500;
+                }
+            }
+            catch (Exception)
+            {
+                return 500;
+            }
+        }
+
+        public int EditCandidato(int id, Candidatos model)
+        {
+            try
+            {
+                var cand = _dbContext.Candidatos
+                    .SingleOrDefault(r => r.Id == id);
+                cand.Nombre = model.Nombre;
+                cand.IdPuesto = model.IdPuesto;
+                cand.IdDepartamento = model.IdDepartamento;
+                cand.Recomendado_p = model.Recomendado_p;
+                cand.Salario_Asp = model.Salario_Asp;
                 _dbContext.SaveChanges();
                 return 200;
             }
@@ -73,6 +125,16 @@ namespace FinalPropietaria.Interfaces
             return _dbContext.Experiencia
                 .Where(r => r.IdCandidato == id)
                 .ToList();
+        }
+
+        public IEnumerable<Candidatos> Search(string nombre, int puesto, string comp, 
+            decimal salarioD, decimal salarioH)
+        {
+           var data = _dbContext.Candidatos
+                .Where(r => r.Nombre == nombre || r.IdPuesto == puesto
+                || r.Competencias.Contains(comp) || r.Salario_Asp > salarioD && r.Salario_Asp < salarioH)
+                .ToList();
+            return data;
         }
     }
 }

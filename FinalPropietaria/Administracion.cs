@@ -128,5 +128,19 @@ namespace FinalPropietaria
         {
             Close();
         }
+
+        private void viewMenu_Click(object sender, EventArgs e)
+        {
+            Form_Consulta cons = new Form_Consulta();
+            cons.MdiParent = this;
+            cons.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Reporte rp = new Form_Reporte();
+            rp.MdiParent = this;
+            rp.Show();
+        }
     }
 }

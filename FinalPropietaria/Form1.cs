@@ -46,6 +46,11 @@ namespace FinalPropietaria
             cand.FormClosed += new FormClosedEventHandler(adm_closed);
             this.Hide();
         }
+
+        private void label5_MouseHover(object sender, EventArgs e)
+        {
+            Cursor.Current = Cursors.Hand;
+        }
     }
 
 }
