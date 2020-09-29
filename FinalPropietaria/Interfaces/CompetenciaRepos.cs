@@ -52,10 +52,24 @@ namespace FinalPropietaria.Interfaces
                .Single(r => r.Id == idCompetencia);
         }
 
-        public IEnumerable<Competencias> GetCompetencias()
+        public IEnumerable<CompetenciaViewModel> GetCompetencias()
         {
-            return _dbContext.Competencias
+
+            var data = _dbContext.Competencias
                 .ToList();
+            List<CompetenciaViewModel> list = new List<CompetenciaViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new CompetenciaViewModel
+                    {
+                        Codigo = item.Id,
+                        Descripcion = item.Descripcion,
+                        Estado = item.Estado.Value ? "Activo" : "Inactivo"
+                    }
+                 );
+            }
+            return list;
         }
     }
 }

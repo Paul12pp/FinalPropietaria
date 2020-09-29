@@ -9,7 +9,7 @@ namespace FinalPropietaria.Interfaces
 {
     public interface ICandidato
     {
-        IEnumerable<Candidatos> GetCandidatos();
+        IEnumerable<CandidatoViewModel> GetCandidatos();
         Candidatos GetCandidatoById(int id);
         Candidatos AddCandidato(Candidatos model);
         int EditCandidato(int id, Candidatos model);

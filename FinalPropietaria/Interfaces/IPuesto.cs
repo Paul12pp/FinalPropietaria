@@ -9,7 +9,7 @@ namespace FinalPropietaria.Interfaces
 {
     public interface IPuesto
     {
-        IEnumerable<Puestos> GetPuestos();
+        IEnumerable<PuestoViewModel> GetPuestos();
         IEnumerable<Departamento> GetDepartamentos();
         int AddPuesto(Puestos model);
         int EditPuesto(int idPuesto, Puestos model);

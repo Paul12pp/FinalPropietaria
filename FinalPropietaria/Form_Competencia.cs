@@ -64,7 +64,7 @@ namespace FinalPropietaria
         private void cell(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-            string a = Convert.ToString(selectedRow.Cells["Id"].Value);
+            string a = Convert.ToString(selectedRow.Cells["Codigo"].Value);
             retrieveData(a);
 
         }
@@ -79,6 +79,11 @@ namespace FinalPropietaria
         private void button2_Click(object sender, EventArgs e)
         {
             cleanAll();
+        }
+
+        private void Form_Competencia_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

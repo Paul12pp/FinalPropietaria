@@ -55,10 +55,26 @@ namespace FinalPropietaria.Interfaces
                 .ToList();
         }
 
-        public IEnumerable<Puestos> GetPuestos()
+        public IEnumerable<PuestoViewModel> GetPuestos()
         {
-            return _dbContext.Puestos
+            var data = _dbContext.Puestos
                 .ToList();
+            List<PuestoViewModel> list = new List<PuestoViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new PuestoViewModel
+                    {
+                        Codigo = item.Id,
+                        Nombre = item.Nombre,
+                        Nivel_Ma_Salarial = item.Nivel_Ma_Salarial.Value,
+                        Nivel_Mi_Salarial = item.Nivel_Mi_Salarial.Value,
+                        Nivel_Riesgo = item.Nivel_Riesgo,
+                        Estado = item.Estado.Value ? "Activo" : "Inactivo"
+                    }
+                 );
+            }
+            return list;
         }
 
         public Puestos GetPuestosById(int idPuesto)

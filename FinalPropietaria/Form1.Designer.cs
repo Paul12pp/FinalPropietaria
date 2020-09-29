@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbcedula = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,12 +60,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Identificate";
             // 
-            // textBox1
+            // tbcedula
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 222);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 5;
+            this.tbcedula.Location = new System.Drawing.Point(35, 222);
+            this.tbcedula.Name = "tbcedula";
+            this.tbcedula.Size = new System.Drawing.Size(186, 20);
+            this.tbcedula.TabIndex = 5;
+            this.tbcedula.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbcedula_KeyDown);
+            this.tbcedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numbers);
             // 
             // label5
             // 
@@ -109,11 +111,12 @@
             this.ClientSize = new System.Drawing.Size(638, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbcedula);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "RRHH System";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -127,7 +130,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbcedula;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
     }

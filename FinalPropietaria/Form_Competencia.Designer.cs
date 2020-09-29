@@ -161,6 +161,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_Competencia";
             this.Text = "Mantenimiento de Competencias";
+            this.Load += new System.EventHandler(this.Form_Competencia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

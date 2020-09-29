@@ -118,7 +118,7 @@ namespace FinalPropietaria
         private void cell(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow selectedRow = dataGridView1.Rows[e.RowIndex];
-            string a = Convert.ToString(selectedRow.Cells["Id"].Value);
+            string a = Convert.ToString(selectedRow.Cells["Codigo"].Value);
             retrieveData(a);
 
         }

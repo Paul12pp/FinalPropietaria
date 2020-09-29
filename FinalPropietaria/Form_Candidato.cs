@@ -534,7 +534,18 @@ namespace FinalPropietaria
 
         private void button5_Click(object sender, EventArgs e)
         {
-            db.DeleteCandidato(idcandida);
+            var result = db.DeleteCandidato(idcandida);
+            if (result == 200)
+            {
+                MessageBox.Show("Proceso abortado.");
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Proceso abortado.");
+                Close();
+            }
+
         }
 
         private bool isValid3()
@@ -557,6 +568,7 @@ namespace FinalPropietaria
                 if (response == 200)
                 {
                     MessageBox.Show("Formulario llenado exitosamente, espere por respuesta.");
+                    Close();
                 }
             }
             else

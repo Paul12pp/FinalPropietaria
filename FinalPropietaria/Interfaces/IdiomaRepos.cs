@@ -53,10 +53,23 @@ namespace FinalPropietaria.Interfaces
                 .Single(r => r.Id == idIdioma);
         }
 
-        public IEnumerable<Idiomas> GetIdiomas()
+        public IEnumerable<IdiomaViewModel> GetIdiomas()
         {
-            return _dbContext.Idiomas
+            var data = _dbContext.Idiomas
                 .ToList();
+            List <IdiomaViewModel> list = new List<IdiomaViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new IdiomaViewModel
+                    {
+                        Codigo=item.Id,
+                        Nombre=item.Nombre,
+                        Estado= item.Estado.Value ? "Activo":"Inactivo"
+                    }
+                 );
+            }
+            return list;
         }
     }
 }

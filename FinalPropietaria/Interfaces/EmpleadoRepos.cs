@@ -56,10 +56,38 @@ namespace FinalPropietaria.Interfaces
                 .SingleOrDefault(r => r.Id == idEmpleado);
         }
 
-        public IEnumerable<Empleado> GetEmpleados()
+        public IEnumerable<EmpleadoViewModel> GetEmpleados()
         {
-            return _dbContext.Empleado
+            var data = _dbContext.Empleado
                 .ToList();
+            List<EmpleadoViewModel> list = new List<EmpleadoViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new EmpleadoViewModel
+                    {
+                        Codigo = item.Id,
+                        Nombre = item.Nombre,
+                        Departamento= item.Departamento.Descripcion,
+                        Cedula=item.Cedula,
+                        Fecha_Ing=item.Fecha_Ing.Value,
+                        Puesto=item.Puesto,
+                        Salario_M=item.Salario_M.Value,
+                        Estado = item.Estado.Value ? "Activo" : "Inactivo"
+                    }
+                 );
+            }
+            return list;
+        }
+
+        public bool Loggin(string cedula)
+        {
+            var emp = _dbContext.Empleado
+                .SingleOrDefault(r => r.Cedula == cedula);
+            if (emp != null)
+                return true;
+            else
+                return false;
         }
 
         public IEnumerable<Empleado> Search(DateTime desde, DateTime hasta)

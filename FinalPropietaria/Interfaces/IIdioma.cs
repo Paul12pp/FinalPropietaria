@@ -9,7 +9,7 @@ namespace FinalPropietaria.Interfaces
 {
     public interface IIdioma
     {
-        IEnumerable<Idiomas> GetIdiomas();
+        IEnumerable<IdiomaViewModel> GetIdiomas();
         int AddIdioma(Idiomas model);
         int EditIdioma(int idIdioma, Idiomas model);
         Idiomas GetIdiomaById(int idIdioma);

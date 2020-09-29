@@ -9,10 +9,11 @@ namespace FinalPropietaria.Interfaces
 {
     public interface IEmpleado
     {
-        IEnumerable<Empleado> GetEmpleados();
+        IEnumerable<EmpleadoViewModel> GetEmpleados();
         int AddEmpleado(Empleado model);
         int EditEmpleado(int idEmpleado, Empleado model);
         Empleado GetEmpleadoById(int idEmpleado);
         IEnumerable<Empleado> Search(DateTime desde, DateTime hasta);
+        bool Loggin(string cedula);
     }
 }

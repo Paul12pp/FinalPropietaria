@@ -114,10 +114,28 @@ namespace FinalPropietaria.Interfaces
                 .SingleOrDefault(r => r.Id == id);
         }
 
-        public IEnumerable<Candidatos> GetCandidatos()
+        public IEnumerable<CandidatoViewModel> GetCandidatos()
         {
-            return _dbContext.Candidatos
+            var data = _dbContext.Candidatos
                 .ToList();
+            List<CandidatoViewModel> list = new List<CandidatoViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new CandidatoViewModel
+                    {
+                        Codigo = item.Id,
+                        Nombre = item.Nombre,
+                        Cedula = item.Cedula,
+                        Departamento = item.Departamento.Descripcion,
+                        Competencias = item.Competencias,
+                        Puesto = item.Puestos.Nombre,
+                        Salario_Asp = item.Salario_Asp.Value,
+                        Recomendado_p = item.Recomendado_p
+                    }
+                 );
+            }
+            return list;
         }
 
         public IEnumerable<Experiencia> GetExperienciasByCandidato(int id)

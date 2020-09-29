@@ -9,7 +9,7 @@ namespace FinalPropietaria.Interfaces
 {
     public interface ICompetencia
     {
-        IEnumerable<Competencias> GetCompetencias();
+        IEnumerable<CompetenciaViewModel> GetCompetencias();
         int AddCompetencia(Competencias model);
         int EditCompetencia(int idCompetencia, Competencias model);
         Competencias GetCompetenciaById(int idCompetencia);
