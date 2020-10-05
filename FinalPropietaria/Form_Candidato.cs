@@ -101,7 +101,7 @@ namespace FinalPropietaria
         private void fillCombox()
         {
             var data = util.GetPuestos();
-            cbPuesto.ValueMember = "Id";
+            cbPuesto.ValueMember = "Codigo";
             cbPuesto.DisplayMember = "Nombre";
             cbPuesto.DataSource = data;
             var data1 = util.GetDepartamentos();

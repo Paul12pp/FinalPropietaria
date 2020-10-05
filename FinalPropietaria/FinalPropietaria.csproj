@@ -115,6 +115,12 @@
     <Compile Include="Form_Idioma.Designer.cs">
       <DependentUpon>Form_Idioma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Perfil.Designer.cs">
+      <DependentUpon>Form_Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Puesto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,7 @@
     <Compile Include="Models\Capacitaciones.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CapacitacionViewModel.cs" />
     <Compile Include="Models\Competencias.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -164,6 +171,7 @@
     <Compile Include="Models\Experiencia.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ExperienciaViewModel.cs" />
     <Compile Include="Models\IdiomaViewModel.cs" />
     <Compile Include="Models\Idiomas.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -210,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Idioma.resx">
       <DependentUpon>Form_Idioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Perfil.resx">
+      <DependentUpon>Form_Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Puesto.resx">
       <DependentUpon>Form_Puesto.cs</DependentUpon>

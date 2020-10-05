@@ -20,7 +20,7 @@ namespace FinalPropietaria
             InitializeComponent();
             dataGridView1.DataSource = db.GetCandidatos();
             var data = puestos.GetPuestos();
-            cbPuesto.ValueMember = "Id";
+            cbPuesto.ValueMember = "Codigo";
             cbPuesto.DisplayMember = "Nombre";
             cbPuesto.DataSource = data;
         }

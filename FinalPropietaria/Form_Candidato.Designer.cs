@@ -152,10 +152,10 @@
             // tpExp
             // 
             this.tpExp.Controls.Add(this.groupBox5);
-            this.tpExp.Location = new System.Drawing.Point(4, 24);
+            this.tpExp.Location = new System.Drawing.Point(4, 5);
             this.tpExp.Name = "tpExp";
             this.tpExp.Padding = new System.Windows.Forms.Padding(3);
-            this.tpExp.Size = new System.Drawing.Size(497, 463);
+            this.tpExp.Size = new System.Drawing.Size(497, 482);
             this.tpExp.TabIndex = 3;
             this.tpExp.Text = "Experiencia Laboral";
             this.tpExp.UseVisualStyleBackColor = true;
@@ -637,10 +637,10 @@
             this.tpComp.Controls.Add(this.label48);
             this.tpComp.Controls.Add(this.groupBox4);
             this.tpComp.Controls.Add(this.groupBox3);
-            this.tpComp.Location = new System.Drawing.Point(4, 24);
+            this.tpComp.Location = new System.Drawing.Point(4, 5);
             this.tpComp.Name = "tpComp";
             this.tpComp.Padding = new System.Windows.Forms.Padding(3);
-            this.tpComp.Size = new System.Drawing.Size(497, 463);
+            this.tpComp.Size = new System.Drawing.Size(497, 482);
             this.tpComp.TabIndex = 1;
             this.tpComp.Text = "Competencias y Capacitaciones";
             this.tpComp.UseVisualStyleBackColor = true;
@@ -1055,10 +1055,10 @@
             this.tpDatos.Controls.Add(this.tbNombre);
             this.tpDatos.Controls.Add(this.tbCedula);
             this.tpDatos.Controls.Add(this.pictureBox1);
-            this.tpDatos.Location = new System.Drawing.Point(4, 24);
+            this.tpDatos.Location = new System.Drawing.Point(4, 5);
             this.tpDatos.Name = "tpDatos";
             this.tpDatos.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDatos.Size = new System.Drawing.Size(497, 463);
+            this.tpDatos.Size = new System.Drawing.Size(497, 482);
             this.tpDatos.TabIndex = 0;
             this.tpDatos.Text = "Datos Personales";
             this.tpDatos.UseVisualStyleBackColor = true;
@@ -1261,11 +1261,12 @@
             this.tabControl.Controls.Add(this.tpDatos);
             this.tabControl.Controls.Add(this.tpComp);
             this.tabControl.Controls.Add(this.tpExp);
-            this.tabControl.ItemSize = new System.Drawing.Size(80, 20);
+            this.tabControl.ItemSize = new System.Drawing.Size(0, 1);
             this.tabControl.Location = new System.Drawing.Point(1, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
             this.tabControl.Size = new System.Drawing.Size(505, 491);
+            this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
             // 
             // Form_Candidato

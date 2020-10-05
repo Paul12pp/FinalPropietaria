@@ -26,9 +26,9 @@ namespace FinalPropietaria
         private void button1_Click_1(object sender, EventArgs e)
         {
             var result = db.Loggin(tbcedula.Text);
-            if (result)
+            if (result.Id!=0)
             {
-                Administracion adm = new Administracion();
+                Administracion adm = new Administracion(result.Nombre);
                 adm.Show();
                 adm.FormClosed += new FormClosedEventHandler(adm_closed);
                 this.Hide();

@@ -68,7 +68,7 @@ namespace FinalPropietaria.Interfaces
                     {
                         Codigo = item.Id,
                         Nombre = item.Nombre,
-                        Departamento= item.Departamento.Descripcion,
+                        Departamento= data.SingleOrDefault(r=>r.Id==item.Id).Departamento.Descripcion,
                         Cedula=item.Cedula,
                         Fecha_Ing=item.Fecha_Ing.Value,
                         Puesto=item.Puesto,
@@ -80,14 +80,14 @@ namespace FinalPropietaria.Interfaces
             return list;
         }
 
-        public bool Loggin(string cedula)
+        public Empleado Loggin(string cedula)
         {
             var emp = _dbContext.Empleado
                 .SingleOrDefault(r => r.Cedula == cedula);
             if (emp != null)
-                return true;
+                return emp;
             else
-                return false;
+                return new Empleado();
         }
 
         public IEnumerable<Empleado> Search(DateTime desde, DateTime hasta)

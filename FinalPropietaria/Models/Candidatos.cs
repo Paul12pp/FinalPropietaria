@@ -29,6 +29,7 @@ namespace FinalPropietaria.Models
         public Nullable<decimal> Salario_Asp { get; set; }
         public string Competencias { get; set; }
         public string Recomendado_p { get; set; }
+        public string Estado { get; set; }
     
         public virtual Departamento Departamento { get; set; }
         public virtual Puestos Puestos { get; set; }

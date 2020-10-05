@@ -18,6 +18,7 @@ namespace FinalPropietaria.Interfaces
         {
             try
             {
+                model.Estado = "Pendiente";
                 var cand = _dbContext.Candidatos.Add(model);
                 _dbContext.SaveChanges();
                 return cand;
@@ -51,6 +52,33 @@ namespace FinalPropietaria.Interfaces
             try
             {
                 _dbContext.Experiencia.AddRange(model);
+                _dbContext.SaveChanges();
+                return 200;
+            }
+            catch (Exception)
+            {
+                return 500;
+            }
+        }
+
+        public int AprobarCandidato(int idcandidato)
+        {
+            try
+            {
+                var cand = _dbContext.Candidatos
+                    .SingleOrDefault(r => r.Id == idcandidato);
+                cand.Estado = "Aprobado";
+                var emp = new Empleado
+                {
+                    Cedula = cand.Cedula,
+                    Nombre = cand.Nombre,
+                    Estado = true,
+                    Fecha_Ing = DateTime.Now,
+                    Salario_M = cand.Salario_Asp,
+                    IdDepartamento = cand.IdDepartamento,
+                    Puesto = cand.Puestos.Nombre
+                };
+                _dbContext.Empleado.Add(emp);
                 _dbContext.SaveChanges();
                 return 200;
             }
@@ -116,7 +144,8 @@ namespace FinalPropietaria.Interfaces
 
         public IEnumerable<CandidatoViewModel> GetCandidatos()
         {
-            var data = _dbContext.Candidatos
+            var data = _dbContext.Candidatos.
+                Where(r=>r.Estado=="Pendiente")
                 .ToList();
             List<CandidatoViewModel> list = new List<CandidatoViewModel>();
             foreach (var item in data)
@@ -138,11 +167,87 @@ namespace FinalPropietaria.Interfaces
             return list;
         }
 
-        public IEnumerable<Experiencia> GetExperienciasByCandidato(int id)
+        public IEnumerable<CandidatoViewModel> GetCandidatosByPuestos(int idPuesto)
         {
-            return _dbContext.Experiencia
+            var data = _dbContext.Candidatos
+                .Where(r => r.IdPuesto == idPuesto)
+               .ToList();
+            List<CandidatoViewModel> list = new List<CandidatoViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new CandidatoViewModel
+                    {
+                        Codigo = item.Id,
+                        Nombre = item.Nombre,
+                        Cedula = item.Cedula,
+                        Departamento = item.Departamento.Descripcion,
+                        Competencias = item.Competencias,
+                        Puesto = item.Puestos.Nombre,
+                        Salario_Asp = item.Salario_Asp.Value,
+                        Recomendado_p = item.Recomendado_p
+                    }
+                 );
+            }
+            return list;
+        }
+
+        public IEnumerable<CapacitacionViewModel> GetCapacitacionByCandidato(int id)
+        {
+            var data = _dbContext.Capacitaciones
                 .Where(r => r.IdCandidato == id)
                 .ToList();
+            List<CapacitacionViewModel> list = new List<CapacitacionViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(new CapacitacionViewModel
+                {
+                    Codigo = item.Id,
+                    Descripcion = item.Descripcion,
+                    Fecha_desde = item.Fecha_desde.Value,
+                    Fecha_hasta = item.Fecha_hasta.Value,
+                    Institucion = item.Institucion,
+                    Nivel = item.Nivel
+                });
+            }
+            return list;
+        }
+
+        public IEnumerable<ExperienciaViewModel> GetExperienciasByCandidato(int id)
+        {
+            var data = _dbContext.Experiencia
+                .Where(r => r.IdCandidato == id)
+                .ToList();
+            List<ExperienciaViewModel> list = new List<ExperienciaViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(new ExperienciaViewModel
+                {
+                    Codigo = item.Id,
+                    Empresa = item.Empresa,
+                    Fecha_desde = item.Fecha_desde.Value,
+                    Fecha_hasta = item.Fecha_hasta.Value,
+                    Puesto = item.Puesto,
+                    Salario = item.Salario.Value
+                });
+            }
+            return list;
+        }
+
+        public int RechazarCandidato(int idcandidato)
+        {
+            try
+            {
+                var cand = _dbContext.Candidatos
+                    .SingleOrDefault(r => r.Id == idcandidato);
+                cand.Estado = "Rechazado";
+                _dbContext.SaveChanges();
+                return 200;
+            }
+            catch (Exception)
+            {
+                return 500;
+            }
         }
 
         public IEnumerable<Candidatos> Search(string nombre, int puesto, string comp, 

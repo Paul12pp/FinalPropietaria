@@ -14,6 +14,6 @@ namespace FinalPropietaria.Interfaces
         int EditEmpleado(int idEmpleado, Empleado model);
         Empleado GetEmpleadoById(int idEmpleado);
         IEnumerable<Empleado> Search(DateTime desde, DateTime hasta);
-        bool Loggin(string cedula);
+        Empleado Loggin(string cedula);
     }
 }

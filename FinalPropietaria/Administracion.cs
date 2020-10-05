@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FinalPropietaria
@@ -14,9 +7,10 @@ namespace FinalPropietaria
     {
         private int childFormNumber = 0;
 
-        public Administracion()
+        public Administracion(string name)
         {
             InitializeComponent();
+            statusName.Text =$"Bienvenido, {name}.";
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -51,7 +45,7 @@ namespace FinalPropietaria
 
         private void ExitToolsStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
         }
 
         private void CutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +135,13 @@ namespace FinalPropietaria
             Form_Reporte rp = new Form_Reporte();
             rp.MdiParent = this;
             rp.Show();
+        }
+
+        private void editMenu_Click(object sender, EventArgs e)
+        {
+            Form_Seleccion sl = new Form_Seleccion();
+            sl.MdiParent = this;
+            sl.Show();
         }
     }
 }

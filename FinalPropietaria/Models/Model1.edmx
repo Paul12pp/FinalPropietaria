@@ -17,6 +17,7 @@
           <Property Name="Salario_Asp" Type="money" />
           <Property Name="Competencias" Type="varchar" MaxLength="50" />
           <Property Name="Recomendado_p" Type="varchar" MaxLength="50" />
+          <Property Name="Estado" Type="varchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Capacitaciones">
           <Key>
@@ -199,6 +200,7 @@
           <NavigationProperty Name="Puestos" Relationship="Self.FK__Candidato__IdPue__182C9B23" FromRole="Candidatos" ToRole="Puestos" />
           <NavigationProperty Name="Experiencia" Relationship="Self.FK__Experienc__IdCan__1BFD2C07" FromRole="Candidatos" ToRole="Experiencia" />
           <NavigationProperty Name="Capacitaciones" Relationship="RRHH_PropietariaModel.FK__Capacitac__IdCan__38996AB5" FromRole="Candidatos" ToRole="Capacitaciones" />
+          <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Capacitaciones">
           <Key>
@@ -376,6 +378,7 @@
           <EntitySetMapping Name="Candidatos">
             <EntityTypeMapping TypeName="RRHH_PropietariaModel.Candidatos">
               <MappingFragment StoreEntitySet="Candidatos">
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Cedula" ColumnName="Cedula" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />

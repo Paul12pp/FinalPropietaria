@@ -25,11 +25,11 @@ namespace FinalPropietaria
         private void fillCombox()
         {
             var data = puestos.GetPuestos();
-            cbPuesto.ValueMember = "Id";
+            cbPuesto.ValueMember = "Codigo";
             cbPuesto.DisplayMember = "Nombre";
             cbPuesto.DataSource = data;
             var data1 = puestos.GetDepartamentos();
-            cbDepartamento.ValueMember = "Id";
+            cbDepartamento.ValueMember = "Codigo";
             cbDepartamento.DisplayMember = "Descripcion";
             cbDepartamento.DataSource = data1;
         }

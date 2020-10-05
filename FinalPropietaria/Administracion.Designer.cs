@@ -41,7 +41,7 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.statusName = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -106,6 +106,7 @@
             this.editMenu.Name = "editMenu";
             this.editMenu.Size = new System.Drawing.Size(69, 20);
             this.editMenu.Text = "Selección";
+            this.editMenu.Click += new System.EventHandler(this.editMenu_Click);
             // 
             // viewMenu
             // 
@@ -131,18 +132,18 @@
             // statusStrip
             // 
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
+            this.statusName});
             this.statusStrip.Location = new System.Drawing.Point(0, 431);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Size = new System.Drawing.Size(773, 22);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
-            // toolStripStatusLabel
+            // statusName
             // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
-            this.toolStripStatusLabel.Text = "Estado";
+            this.statusName.Name = "statusName";
+            this.statusName.Size = new System.Drawing.Size(42, 17);
+            this.statusName.Text = "Estado";
             // 
             // Administracion
             // 
@@ -170,7 +171,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
+        private System.Windows.Forms.ToolStripStatusLabel statusName;
         private System.Windows.Forms.ToolStripMenuItem fileMenu;
         private System.Windows.Forms.ToolStripMenuItem editMenu;
         private System.Windows.Forms.ToolStripMenuItem viewMenu;
