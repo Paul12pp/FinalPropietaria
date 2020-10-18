@@ -9,7 +9,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Cedula.Value, "DataSet1")</Value>
+                <Value>=Fields!Cedula.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -17,7 +17,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Cedula</rd:DefaultName>
-        <Top>0.03528cm</Top>
+        <Top>0.00882cm</Top>
         <Left>0.635cm</Left>
         <Height>0.6cm</Height>
         <Width>2.5cm</Width>
@@ -38,7 +38,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Nombre.Value, "DataSet1")</Value>
+                <Value>=Fields!Nombre.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -67,7 +67,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Puesto.Value, "DataSet1")</Value>
+                <Value>=Fields!Puesto.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -97,7 +97,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Salario_M.Value, "DataSet1")</Value>
+                <Value>=Fields!Salario_M.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -127,7 +127,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=First(Fields!Fecha_Ing.Value, "DataSet1")</Value>
+                <Value>=Fields!Fecha_Ing.Value</Value>
                 <Style />
               </TextRun>
             </TextRuns>
@@ -260,6 +260,13 @@
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
       <rd:DataSourceID>763d6058-66df-4022-9e21-d121693fe2a1</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="FinalPropietariaModels1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>59c420cb-b0ed-4dff-817c-5dfe149c7edc</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>

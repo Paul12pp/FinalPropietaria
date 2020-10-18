@@ -637,10 +637,10 @@
             this.tpComp.Controls.Add(this.label48);
             this.tpComp.Controls.Add(this.groupBox4);
             this.tpComp.Controls.Add(this.groupBox3);
-            this.tpComp.Location = new System.Drawing.Point(4, 5);
+            this.tpComp.Location = new System.Drawing.Point(4, 14);
             this.tpComp.Name = "tpComp";
             this.tpComp.Padding = new System.Windows.Forms.Padding(3);
-            this.tpComp.Size = new System.Drawing.Size(497, 482);
+            this.tpComp.Size = new System.Drawing.Size(497, 473);
             this.tpComp.TabIndex = 1;
             this.tpComp.Text = "Competencias y Capacitaciones";
             this.tpComp.UseVisualStyleBackColor = true;
@@ -1055,10 +1055,10 @@
             this.tpDatos.Controls.Add(this.tbNombre);
             this.tpDatos.Controls.Add(this.tbCedula);
             this.tpDatos.Controls.Add(this.pictureBox1);
-            this.tpDatos.Location = new System.Drawing.Point(4, 5);
+            this.tpDatos.Location = new System.Drawing.Point(4, 14);
             this.tpDatos.Name = "tpDatos";
             this.tpDatos.Padding = new System.Windows.Forms.Padding(3);
-            this.tpDatos.Size = new System.Drawing.Size(497, 482);
+            this.tpDatos.Size = new System.Drawing.Size(497, 473);
             this.tpDatos.TabIndex = 0;
             this.tpDatos.Text = "Datos Personales";
             this.tpDatos.UseVisualStyleBackColor = true;

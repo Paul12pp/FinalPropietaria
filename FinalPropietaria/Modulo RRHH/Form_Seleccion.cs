@@ -45,6 +45,12 @@ namespace FinalPropietaria
             //retrieveData(a);
             Form_Perfil pp = new Form_Perfil(Convert.ToInt32(a));
             pp.Show();
+            pp.FormClosed += new FormClosedEventHandler(adm_closed);
+        }
+
+        void adm_closed(object sender, FormClosedEventArgs e)
+        {
+            dataGridView1.DataSource = db.GetCandidatos();
         }
 
         private void Form_Seleccion_Load(object sender, EventArgs e)

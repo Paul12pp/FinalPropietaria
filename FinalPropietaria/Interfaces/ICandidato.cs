@@ -12,6 +12,7 @@ namespace FinalPropietaria.Interfaces
         IEnumerable<CandidatoViewModel> GetCandidatos();
         IEnumerable<CandidatoViewModel> GetCandidatosByPuestos(int idPuesto);
         Candidatos GetCandidatoById(int id);
+        Candidatos GetCandidatoByCedula(string cedula);
         Candidatos AddCandidato(Candidatos model);
         int EditCandidato(int id, Candidatos model);
         int AddExperiencia(List<Experiencia> model);
@@ -20,7 +21,7 @@ namespace FinalPropietaria.Interfaces
         int AddCapacitaciones(int id, List<Capacitaciones> model,
             string competencias);
         int DeleteCandidato(int id);
-        IEnumerable<Candidatos> Search(string nombre, int puesto, string comp,
+        IEnumerable<CandidatoViewModel> Search(string nombre, int puesto, string comp,
             decimal salarioD, decimal salarioH);
         int AprobarCandidato(int idcandidato);
         int RechazarCandidato(int idcandidato);

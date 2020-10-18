@@ -72,5 +72,10 @@ namespace FinalPropietaria
             else
                 MessageBox.Show("Ha ocurrido un error, intente otra vez");
         }
+
+        private void Form_Perfil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

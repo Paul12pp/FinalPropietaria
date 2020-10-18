@@ -136,6 +136,13 @@ namespace FinalPropietaria.Interfaces
             }
         }
 
+        public Candidatos GetCandidatoByCedula(string cedula)
+        {
+            var cand = _dbContext.Candidatos
+                .SingleOrDefault(r => r.Cedula == cedula);
+            return cand != null ? cand : new Candidatos();
+        }
+
         public Candidatos GetCandidatoById(int id)
         {
             return _dbContext.Candidatos
@@ -250,14 +257,34 @@ namespace FinalPropietaria.Interfaces
             }
         }
 
-        public IEnumerable<Candidatos> Search(string nombre, int puesto, string comp, 
+        public IEnumerable<CandidatoViewModel> Search(string nombre, int puesto, string comp, 
             decimal salarioD, decimal salarioH)
         {
            var data = _dbContext.Candidatos
-                .Where(r => r.Nombre == nombre || r.IdPuesto == puesto
-                || r.Competencias.Contains(comp) || r.Salario_Asp > salarioD && r.Salario_Asp < salarioH)
+                .Where(r => r.Nombre.Contains(nombre) && r.IdPuesto == puesto
+                && r.Competencias.Contains(comp))
                 .ToList();
-            return data;
+            if (salarioD > 0)
+                data.Where(r => r.Salario_Asp > salarioD && r.Salario_Asp < salarioH)
+                    .ToList();
+            List<CandidatoViewModel> list = new List<CandidatoViewModel>();
+            foreach (var item in data)
+            {
+                list.Add(
+                    new CandidatoViewModel
+                    {
+                        Codigo = item.Id,
+                        Nombre = item.Nombre,
+                        Cedula = item.Cedula,
+                        Departamento = item.Departamento.Descripcion,
+                        Competencias = item.Competencias,
+                        Puesto = item.Puestos.Nombre,
+                        Salario_Asp = item.Salario_Asp.Value,
+                        Recomendado_p = item.Recomendado_p
+                    }
+                 );
+            }
+            return list;
         }
     }
 }

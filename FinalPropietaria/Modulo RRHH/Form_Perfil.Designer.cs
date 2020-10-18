@@ -83,9 +83,9 @@
             this.lbl2.ForeColor = System.Drawing.Color.Orchid;
             this.lbl2.Location = new System.Drawing.Point(131, 68);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(46, 13);
+            this.lbl2.Size = new System.Drawing.Size(50, 13);
             this.lbl2.TabIndex = 3;
-            this.lbl2.Text = "Cedula";
+            this.lbl2.Text = "Cedula:";
             // 
             // label1
             // 
@@ -298,6 +298,7 @@
             this.MaximizeBox = false;
             this.Name = "Form_Perfil";
             this.Text = "Perfil";
+            this.Load += new System.EventHandler(this.Form_Perfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

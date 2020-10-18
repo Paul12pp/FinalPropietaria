@@ -19,11 +19,12 @@ namespace FinalPropietaria
         {
             InitializeComponent();
             //dataGridView1.DataSource = db.GetEmpleados();
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Reportes.Report1.rdlc";
             ReportDataSource rds1 = new ReportDataSource("DataSet1", db.GetEmpleados());
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(rds1);
             this.reportViewer1.RefreshReport();
+
         }
 
         private void Form_Reporte_Load(object sender, EventArgs e)
@@ -36,7 +37,7 @@ namespace FinalPropietaria
         {
             var rs = db.Search(dtD.Value, dtH.Value);
             //dataGridView1.DataSource = rs;
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Reportes.Report1.rdlc";
             ReportDataSource rds1 = new ReportDataSource("DataSet1", rs);
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(rds1);
@@ -45,7 +46,7 @@ namespace FinalPropietaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Report1.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "FinalPropietaria.Reportes.Report1.rdlc";
             ReportDataSource rds1 = new ReportDataSource("DataSet1", db.GetEmpleados());
             this.reportViewer1.LocalReport.DataSources.Clear();
             this.reportViewer1.LocalReport.DataSources.Add(rds1);

@@ -29,14 +29,14 @@ namespace FinalPropietaria
             cbPuesto.DisplayMember = "Nombre";
             cbPuesto.DataSource = data;
             var data1 = puestos.GetDepartamentos();
-            cbDepartamento.ValueMember = "Codigo";
+            cbDepartamento.ValueMember = "Id";
             cbDepartamento.DisplayMember = "Descripcion";
             cbDepartamento.DataSource = data1;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (isValid())
+            if (isValid() && validaCedula(tbCedula.Text))
             {
                 var model = new Models.Empleado
                 {
@@ -92,6 +92,10 @@ namespace FinalPropietaria
                 valid = false;
             }
             if (tbSalario.Text == "")
+            {
+                valid = false;
+            }
+            if (Convert.ToDecimal(tbSalario.Text) < 0)
             {
                 valid = false;
             }
@@ -153,6 +157,31 @@ namespace FinalPropietaria
             {
                 e.Handled = true;
             }
+        }
+        public static bool validaCedula(string pCedula)
+
+        {
+            int vnTotal = 0;
+            string vcCedula = pCedula.Replace("-", "");
+            int pLongCed = vcCedula.Trim().Length;
+            int[] digitoMult = new int[11] { 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
+
+            if (pLongCed < 11 || pLongCed > 11)
+                return false;
+
+            for (int vDig = 1; vDig <= pLongCed; vDig++)
+            {
+                int vCalculo = Int32.Parse(vcCedula.Substring(vDig - 1, 1)) * digitoMult[vDig - 1];
+                if (vCalculo < 10)
+                    vnTotal += vCalculo;
+                else
+                    vnTotal += Int32.Parse(vCalculo.ToString().Substring(0, 1)) + Int32.Parse(vCalculo.ToString().Substring(1, 1));
+            }
+
+            if (vnTotal % 10 == 0)
+                return true;
+            else
+                return false;
         }
     }
 }

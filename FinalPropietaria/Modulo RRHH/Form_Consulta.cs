@@ -76,7 +76,7 @@ namespace FinalPropietaria
         private void btnsearch_Click(object sender, EventArgs e)
         {
             var data = db.Search(tbNombre.Text, Convert.ToInt32(cbPuesto.SelectedValue), tbCompe.Text,
-                Convert.ToDecimal(tbSd.Text), Convert.ToDecimal(tbsH.Text));
+                Convert.ToDecimal(tbSd.Text==""?"0":tbSd.Text), Convert.ToDecimal(tbsH.Text==""?"0":tbsH.Text));
             dataGridView1.DataSource = data;
         }
     }

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.DepartamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label30 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,11 +39,14 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnsearch = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.DepartamentoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.DepartamentoBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DepartamentoBindingSource
+            // 
+            this.DepartamentoBindingSource.DataMember = "Empleado";
+            this.DepartamentoBindingSource.DataSource = typeof(FinalPropietaria.Models.Departamento);
             // 
             // label30
             // 
@@ -125,16 +129,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnPrint
-            // 
-            this.btnPrint.BackgroundImage = global::FinalPropietaria.Properties.Resources.imprimir;
-            this.btnPrint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrint.Location = new System.Drawing.Point(722, 39);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(65, 50);
-            this.btnPrint.TabIndex = 35;
-            this.btnPrint.UseVisualStyleBackColor = true;
-            // 
             // reportViewer1
             // 
             reportDataSource1.Name = "DataSet1";
@@ -147,18 +141,12 @@
             this.reportViewer1.Size = new System.Drawing.Size(775, 454);
             this.reportViewer1.TabIndex = 36;
             // 
-            // DepartamentoBindingSource
-            // 
-            this.DepartamentoBindingSource.DataMember = "Empleado";
-            this.DepartamentoBindingSource.DataSource = typeof(FinalPropietaria.Models.Departamento);
-            // 
             // Form_Reporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 565);
             this.Controls.Add(this.reportViewer1);
-            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.dtH);
@@ -185,7 +173,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnsearch;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnPrint;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource DepartamentoBindingSource;
     }

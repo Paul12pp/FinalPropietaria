@@ -73,10 +73,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administracion.cs">
+    <Compile Include="Modulo RRHH\Administracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Administracion.Designer.cs">
+    <Compile Include="Modulo RRHH\Administracion.Designer.cs">
       <DependentUpon>Administracion.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
@@ -85,59 +85,65 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Candidato.cs">
+    <Compile Include="Modulo Candidato\Form_Candidato.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Candidato.Designer.cs">
+    <Compile Include="Modulo Candidato\Form_Candidato.Designer.cs">
       <DependentUpon>Form_Candidato.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Competencia.cs">
+    <Compile Include="Modulo RRHH\Form_Competencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Competencia.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Competencia.Designer.cs">
       <DependentUpon>Form_Competencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Consulta.cs">
+    <Compile Include="Modulo RRHH\Form_Consulta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Consulta.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Consulta.Designer.cs">
       <DependentUpon>Form_Consulta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Empleado.cs">
+    <Compile Include="Modulo RRHH\Form_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Empleado.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Empleado.Designer.cs">
       <DependentUpon>Form_Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Idioma.cs">
+    <Compile Include="Modulo RRHH\Form_Idioma.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Idioma.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Idioma.Designer.cs">
       <DependentUpon>Form_Idioma.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Perfil.cs">
+    <Compile Include="Modulo RRHH\Form_Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Perfil.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Perfil.Designer.cs">
       <DependentUpon>Form_Perfil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Puesto.cs">
+    <Compile Include="Modulo RRHH\Form_Puesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Puesto.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Puesto.Designer.cs">
       <DependentUpon>Form_Puesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Reporte.cs">
+    <Compile Include="Modulo RRHH\Form_Reporte.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Reporte.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Reporte.Designer.cs">
       <DependentUpon>Form_Reporte.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Seleccion.cs">
+    <Compile Include="Modulo RRHH\Form_Seleccion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Seleccion.Designer.cs">
+    <Compile Include="Modulo RRHH\Form_Seleccion.Designer.cs">
       <DependentUpon>Form_Seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modulo Candidato\Form_Verificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo Candidato\Form_Verificar.Designer.cs">
+      <DependentUpon>Form_Verificar.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\CandidatoRepos.cs" />
     <Compile Include="Interfaces\CompetenciaRepos.cs" />
@@ -198,38 +204,41 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="Administracion.resx">
+    <EmbeddedResource Include="Modulo RRHH\Administracion.resx">
       <DependentUpon>Administracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Candidato.resx">
+    <EmbeddedResource Include="Modulo Candidato\Form_Candidato.resx">
       <DependentUpon>Form_Candidato.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Competencia.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Competencia.resx">
       <DependentUpon>Form_Competencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Consulta.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Consulta.resx">
       <DependentUpon>Form_Consulta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Empleado.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Empleado.resx">
       <DependentUpon>Form_Empleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Idioma.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Idioma.resx">
       <DependentUpon>Form_Idioma.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Perfil.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Perfil.resx">
       <DependentUpon>Form_Perfil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Puesto.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Puesto.resx">
       <DependentUpon>Form_Puesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Reporte.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Reporte.resx">
       <DependentUpon>Form_Reporte.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Seleccion.resx">
+    <EmbeddedResource Include="Modulo RRHH\Form_Seleccion.resx">
       <DependentUpon>Form_Seleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modulo Candidato\Form_Verificar.resx">
+      <DependentUpon>Form_Verificar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -241,7 +250,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
     <EntityDeploy Include="Models\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>

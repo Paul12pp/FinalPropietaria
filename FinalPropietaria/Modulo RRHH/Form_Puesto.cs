@@ -58,7 +58,15 @@ namespace FinalPropietaria
             {
                 valid = false;
             }
-            if(cbEstado.Text == "")
+            if (Convert.ToDecimal(tbSmax.Text)<0)
+            {
+                valid = false;
+            }
+            if (Convert.ToDecimal(tbSmin.Text)<0)
+            {
+                valid = false;
+            }
+            if (cbEstado.Text == "")
             {
                 valid = false;
             }

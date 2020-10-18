@@ -158,6 +158,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Administracion";
             this.Text = "Administración";
+            this.Load += new System.EventHandler(this.Administracion_Load);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);

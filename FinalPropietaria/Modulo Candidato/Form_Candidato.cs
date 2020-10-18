@@ -39,7 +39,7 @@ namespace FinalPropietaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (isValid())
+            if (isValid() && validaCedula(tbCedula.Text))
             {
                 var cand = new Candidatos
                 {
@@ -74,7 +74,7 @@ namespace FinalPropietaria
             }
             else
             {
-                MessageBox.Show("Complete los cambos.");
+                MessageBox.Show("Complete los cambos o verifique la cedula");
             }
         }
 
@@ -142,6 +142,10 @@ namespace FinalPropietaria
                 valid = false;
             }
             if (tbSalario.Text == "")
+            {
+                valid = false;
+            }
+            if (Convert.ToDecimal(tbSalario.Text)<0)
             {
                 valid = false;
             }
@@ -552,7 +556,7 @@ namespace FinalPropietaria
         {
             bool valid = false;
             if (tbEmpr1.Text != "" && tbPuesto1.Text != ""
-               && tbSalario1.Text != "")
+               && tbSalario1.Text != "" && Convert.ToInt32(tbSalario1.Text)<0)
             {
                 valid = true;
             }
@@ -575,6 +579,30 @@ namespace FinalPropietaria
             {
                 MessageBox.Show("Complete los campos.");
             }
+        }
+        public static bool validaCedula(string pCedula)
+        {
+            int vnTotal = 0;
+            string vcCedula = pCedula.Replace("-", "");
+            int pLongCed = vcCedula.Trim().Length;
+            int[] digitoMult = new int[11] { 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1 };
+
+            if (pLongCed < 11 || pLongCed > 11)
+                return false;
+
+            for (int vDig = 1; vDig <= pLongCed; vDig++)
+            {
+                int vCalculo = Int32.Parse(vcCedula.Substring(vDig - 1, 1)) * digitoMult[vDig - 1];
+                if (vCalculo < 10)
+                    vnTotal += vCalculo;
+                else
+                    vnTotal += Int32.Parse(vCalculo.ToString().Substring(0, 1)) + Int32.Parse(vCalculo.ToString().Substring(1, 1));
+            }
+
+            if (vnTotal % 10 == 0)
+                return true;
+            else
+                return false;
         }
     }
 }

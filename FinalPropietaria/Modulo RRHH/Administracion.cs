@@ -143,5 +143,10 @@ namespace FinalPropietaria
             sl.MdiParent = this;
             sl.Show();
         }
+
+        private void Administracion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
